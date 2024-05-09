@@ -1,13 +1,110 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* background: rgb(18,49,10);
+  background: linear-gradient(90deg, rgba(18,49,10,1) 0%, rgb(11, 3, 3) 46%);  */
+   /* background: url("./assets/space.png"); */
+   background-color:rgba(0, 0, 0, 0.85);
+}
+.teamm{
+     background: url("./assets/space.png");
+
+}
+/* For webkit-based browsers */
+::-webkit-scrollbar {
+  width: 12px; /* Set width of the scrollbar */
+  height: 2px; /* Set height of the scrollbar */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* For webkit-based browsers */
+::-webkit-scrollbar-thumb {
+  background-color: red; /* Set color of the scrollbar thumb */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.header {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 100px;
+    opacity: 5px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border:5px solid rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    font-weight: bolder;
+}
+
+
+/* 
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left:auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 3%;
+    height: 80px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}  */
+
+/* .header:hover::before {
+    left: 100%;
+}  */
+
+.navbar a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover {
+    color: yellow;
+}
+
+
+
+ /* #gooey{
+  height: 0;
+  width: 0vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+  top: 58%;
+  left: 25%;
+  filter: blur(20px);
+  animation-name: gooey;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey {
+  from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+}  */
